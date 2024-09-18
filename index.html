@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HLS Video Stream</title>
+  <!-- Include Video.js CSS -->
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Video Streaming via HLS</h1>
+  <!-- Video.js Player -->
+  <video
+    id="videoPlayer"
+    class="video-js vjs-default-skin"
+    controls
+    preload="auto"
+    width="640"
+    height="360"
+    data-setup='{}'>
+    <source src="https://thekera404.github.io/view/output.m3u8" type="application/x-mpegURL" />
+  </video>
+
+  <!-- Include Video.js JS -->
+  <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+</body>
+</html>
